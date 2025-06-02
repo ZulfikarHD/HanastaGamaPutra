@@ -1,0 +1,74 @@
+Great choice with "Hanasta Gama Putra" - it has a strong, professional sound! For a web-based company profile that's professional yet simple and follows best UI/UX practices, here's my recommendation:
+
+## **Recommended Page Structure (5-7 Pages)**
+
+### **1. Home/Landing Page**
+- Hero section with company name, tagline, and compelling visual
+- Brief overview of services (construction + supply)
+- Key statistics or achievements
+- Call-to-action buttons
+- Quick navigation to other sections
+
+### **2. About Us**
+- Company story and mission
+- Core values
+- Timeline/milestones
+- Leadership team (with photos)
+- Company culture and approach
+
+### **3. Services**
+- **Construction Services** (with subcategories)
+- **Construction Supplies** (with product categories)
+- Process overview
+- Quality standards
+
+### **4. Projects/Portfolio**
+- Featured projects with before/after photos
+- Project categories (residential, commercial, etc.)
+- Case studies (2-3 detailed examples)
+- Client testimonials
+
+### **5. Contact**
+- Contact form
+- Office locations and map
+- Business hours
+- Social media links
+- Request for quote section
+
+### **Optional Additional Pages:**
+- **News/Blog** (for SEO and engagement)
+- **Careers** (if hiring)
+
+## **UI/UX Design Principles for Professional Feel:**
+
+### **Visual Design:**
+- **Color Scheme**: Earth tones (browns, grays, blues) to reflect construction industry
+- **Typography**: Clean, readable fonts (like Inter, Roboto, or Open Sans)
+- **White Space**: Plenty of breathing room between sections
+- **Imagery**: High-quality photos of projects, team, and equipment
+
+### **User Experience:**
+- **Mobile-First**: Responsive design that works on all devices
+- **Fast Loading**: Optimized images and minimal animations
+- **Clear Navigation**: Sticky header with logical menu structure
+- **Progressive Disclosure**: Show essential info first, details on demand
+- **Trust Signals**: Certifications, testimonials, contact info prominently displayed
+
+### **Content Strategy:**
+- **Scannable Content**: Bullet points, short paragraphs, clear headings
+- **Visual Hierarchy**: Important information stands out
+- **Action-Oriented**: Clear CTAs like "Get Quote," "View Projects," "Contact Us"
+
+## **Technical Considerations:**
+- **Single Page Application (SPA)** vs **Multi-Page**: I'd recommend a traditional multi-page site for better SEO
+- **Content Management**: Consider a simple CMS for easy updates
+- **Performance**: Optimize for Google PageSpeed scores
+- **SEO**: Proper meta tags, structured data, local SEO optimization
+
+Would you like to dive deeper into any specific aspect? For example:
+1. Detailed wireframes for the homepage
+2. Content strategy for each page
+3. Technical implementation approach
+4. Specific design elements or components
+
+What interests you most for the next step?

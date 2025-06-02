@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Hanasta Gama Putra | Construction Excellence Since 2008</title>
+    <meta name="description" content="Learn about Hanasta Gama Putra's 15+ years of construction excellence, our team, values, and commitment to quality building solutions in Indonesia.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.8), rgba(30, 41, 59, 0.8)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><rect fill="%23334155" width="1000" height="1000"/><g fill="%23475569"><circle cx="200" cy="200" r="2"/><circle cx="400" cy="400" r="2"/><circle cx="600" cy="600" r="2"/><circle cx="800" cy="800" r="2"/></g></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="index.html" class="text-2xl font-bold text-slate-800">
+                            <span class="text-orange-600">Hanasta</span> Gama Putra
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-slate-700 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                        <a href="about.html" class="text-orange-600 px-3 py-2 text-sm font-medium">About</a>
+                        <a href="index.html#services" class="text-slate-700 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors">Services</a>
+                        <a href="projects.html" class="text-slate-700 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors">Projects</a>
+                        <a href="index.html#contact" class="bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-orange-700 transition-colors">Contact Us</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-700 hover:text-orange-600 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-slate-700 hover:text-orange-600 transition-colors">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-orange-600">About</a>
+                <a href="index.html#services" class="block px-3 py-2 text-slate-700 hover:text-orange-600 transition-colors">Services</a>
+                <a href="projects.html" class="block px-3 py-2 text-slate-700 hover:text-orange-600 transition-colors">Projects</a>
+                <a href="index.html#contact" class="block px-3 py-2 bg-orange-600 text-white rounded-lg mx-3 text-center">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg pt-24 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                    Our Story of
+                    <span class="text-orange-400">Excellence</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
+                    Building trust, delivering quality, and creating lasting partnerships 
+                    in Indonesia's construction industry since 2008.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Story -->
+    <section class="py-20 bg-gradient-to-br from-slate-50 to-orange-50 relative overflow-hidden">
+        <!-- Decorative elements -->
+        <div class="absolute top-20 left-10 w-32 h-32 bg-orange-200 rounded-full opacity-20 animate-pulse"></div>
+        <div class="absolute bottom-20 right-10 w-24 h-24 bg-slate-200 rounded-full opacity-30 animate-pulse" style="animation-delay: 1s;"></div>
+        <div class="absolute top-1/2 left-1/4 w-16 h-16 bg-orange-300 rounded-full opacity-15 animate-pulse" style="animation-delay: 2s;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="inline-block bg-gradient-to-r from-orange-600 to-orange-700 text-white px-6 py-2 rounded-full text-sm font-medium mb-4">
+                    Our Story
+                </div>
+                <h2 class="text-4xl font-bold text-slate-800 mb-6">Our Journey of Excellence</h2>
+                <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+                    From humble beginnings to industry leadership - discover how we've grown while staying true to our core values.
+                </p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-orange-400 to-orange-600 hidden lg:block"></div>
+                
+                <!-- Timeline items -->
+                <div class="space-y-16">
+                    <!-- 2008 - Foundation -->
+                    <div class="flex flex-col lg:flex-row items-center" data-aos="fade-right">
+                        <div class="lg:w-1/2 lg:pr-12 mb-8 lg:mb-0">
+                            <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift relative">
+                                <div class="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-orange-400 to-orange-600 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-rocket text-white text-xl"></i>
+                                </div>
+                                <div class="text-3xl font-bold bg-gradient-to-r from-orange-600 to-orange-700 bg-clip-text text-transparent mb-4">2008</div>
+                                <h3 class="text-2xl font-bold text-slate-800 mb-4">The Foundation</h3>
+                                <p class="text-slate-600 mb-4">
+                                    Hanasta Gama Putra began as a vision to transform Indonesia's construction landscape. 
+                                    Founded by a team of passionate engineers and builders with a simple mission: 
+                                    to deliver exceptional construction services while maintaining the highest standards of quality and integrity.
+                                </p>
+                                <div class="flex items-center text-orange-600 font-semibold">
+                                    <i class="fas fa-users mr-2"></i>
+                                    Small team, big dreams
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2 lg:pl-12">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="text-center bg-white rounded-xl p-6 shadow-lg">
+                                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <i class="fas fa-calendar-alt text-2xl text-orange-600"></i>
+                                    </div>
+                                    <div class="text-2xl font-bold text-slate-800">2008</div>
+                                    <div class="text-slate-600 text-sm">Founded</div>
+                                </div>
+                                <div class="text-center bg-white rounded-xl p-6 shadow-lg">
+                                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <i class="fas fa-hammer text-2xl text-blue-600"></i>
+                                    </div>
+                                    <div class="text-2xl font-bold text-slate-800">5</div>
+                                    <div class="text-slate-600 text-sm">First Projects</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2015 - Growth -->
+                    <div class="flex flex-col lg:flex-row-reverse items-center" data-aos="fade-left">
+                        <div class="lg:w-1/2 lg:pl-12 mb-8 lg:mb-0">
+                            <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift relative">
+                                <div class="absolute -top-4 -right-4 w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-chart-line text-white text-xl"></i>
+                                </div>
+                                <div class="text-3xl font-bold bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent mb-4">2015</div>
+                                <h3 class="text-2xl font-bold text-slate-800 mb-4">Rapid Expansion</h3>
+                                <p class="text-slate-600 mb-4">
+                                    Seven years of dedication paid off as we evolved from a small local contractor to a comprehensive 
+                                    construction services and supplies company. Our growth was driven by unwavering commitment to 
+                                    excellence, innovation, and customer satisfaction.
+                                </p>
+                                <div class="flex items-center text-blue-600 font-semibold">
+                                    <i class="fas fa-trending-up mr-2"></i>
+                                    Expanding across Indonesia
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2 lg:pr-12">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="text-center bg-white rounded-xl p-6 shadow-lg">
+                                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <i class="fas fa-map-marker-alt text-2xl text-green-600"></i>
+                                    </div>
+                                    <div class="text-2xl font-bold text-slate-800">10+</div>
+                                    <div class="text-slate-600 text-sm">Cities Served</div>
+                                </div>
+                                <div class="text-center bg-white rounded-xl p-6 shadow-lg">
+                                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <i class="fas fa-building text-2xl text-purple-600"></i>
+                                    </div>
+                                    <div class="text-2xl font-bold text-slate-800">50+</div>
+                                    <div class="text-slate-600 text-sm">Projects Completed</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2024 - Present -->
+                    <div class="flex flex-col lg:flex-row items-center" data-aos="fade-right">
+                        <div class="lg:w-1/2 lg:pr-12 mb-8 lg:mb-0">
+                            <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift relative">
+                                <div class="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-crown text-white text-xl"></i>
+                                </div>
+                                <div class="text-3xl font-bold bg-gradient-to-r from-green-600 to-green-700 bg-clip-text text-transparent mb-4">2024</div>
+                                <h3 class="text-2xl font-bold text-slate-800 mb-4">Industry Leadership</h3>
+                                <p class="text-slate-600 mb-4">
+                                    Today, we proudly serve clients across Indonesia, from individual homeowners to large corporations, 
+                                    delivering projects that range from residential homes to industrial complexes. Our success is measured 
+                                    not just in the buildings we construct, but in the lasting relationships we build with our clients.
+                                </p>
+                                <div class="flex items-center text-green-600 font-semibold">
+                                    <i class="fas fa-award mr-2"></i>
+                                    Trusted industry leader
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2 lg:pl-12">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="text-center bg-white rounded-xl p-6 shadow-lg">
+                                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <i class="fas fa-users text-2xl text-orange-600"></i>
+                                    </div>
+                                    <div class="text-2xl font-bold text-slate-800">50+</div>
+                                    <div class="text-slate-600 text-sm">Team Members</div>
+                                </div>
+                                <div class="text-center bg-white rounded-xl p-6 shadow-lg">
+                                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <i class="fas fa-trophy text-2xl text-yellow-600"></i>
+                                    </div>
+                                    <div class="text-2xl font-bold text-slate-800">15+</div>
+                                    <div class="text-slate-600 text-sm">Awards Won</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Stats -->
+            <div class="mt-20 bg-gradient-to-r from-orange-600 to-orange-700 rounded-3xl p-8 text-center" data-aos="fade-up">
+                <h3 class="text-2xl font-bold text-white mb-8">Our Journey in Numbers</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div>
+                        <div class="text-4xl font-bold text-white mb-2">16+</div>
+                        <div class="text-orange-100">Years of Excellence</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-white mb-2">150+</div>
+                        <div class="text-orange-100">Projects Delivered</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-white mb-2">500+</div>
+                        <div class="text-orange-100">Happy Clients</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-white mb-2">24/7</div>
+                        <div class="text-orange-100">Support Available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission, Vision, Values -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-slate-800 mb-4">Our Foundation</h2>
+                <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+                    The principles that guide every decision we make and every project we undertake.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Mission -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-bullseye text-2xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-4">Our Mission</h3>
+                    <p class="text-slate-600">
+                        To deliver exceptional construction services and premium building supplies that exceed client expectations, 
+                        while contributing to Indonesia's infrastructure development through innovation, quality, and sustainable practices.
+                    </p>
+                </div>
+                
+                <!-- Vision -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-eye text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-4">Our Vision</h3>
+                    <p class="text-slate-600">
+                        To be Indonesia's most trusted and innovative construction partner, recognized for our commitment to quality, 
+                        sustainability, and customer satisfaction, while setting new standards in the construction industry.
+                    </p>
+                </div>
+                
+                <!-- Values -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-heart text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-4">Our Values</h3>
+                    <ul class="text-slate-600 space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Quality Excellence
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Integrity & Trust
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Innovation & Growth
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Customer Focus
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-slate-800 mb-4">Leadership Team</h2>
+                <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+                    Meet the experienced professionals who lead Hanasta Gama Putra with vision, expertise, and dedication.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- CEO -->
+                <div class="bg-gray-50 rounded-2xl p-8 text-center hover-lift" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-24 h-24 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-user text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Budi Santoso</h3>
+                    <p class="text-orange-600 font-semibold mb-4">Chief Executive Officer</p>
+                    <p class="text-slate-600 text-sm">
+                        20+ years in construction industry. Civil Engineering graduate from ITB with extensive experience 
+                        in project management and business development.
+                    </p>
+                </div>
+                
+                <!-- CTO -->
+                <div class="bg-gray-50 rounded-2xl p-8 text-center hover-lift" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-24 h-24 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-user text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Sari Wijaya</h3>
+                    <p class="text-blue-600 font-semibold mb-4">Chief Technical Officer</p>
+                    <p class="text-slate-600 text-sm">
+                        Expert in construction technology and innovation. Leads our technical team with focus on 
+                        sustainable building practices and modern construction methods.
+                    </p>
+                </div>
+                
+                <!-- COO -->
+                <div class="bg-gray-50 rounded-2xl p-8 text-center hover-lift" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-24 h-24 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-user text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Ahmad Rahman</h3>
+                    <p class="text-green-600 font-semibold mb-4">Chief Operations Officer</p>
+                    <p class="text-slate-600 text-sm">
+                        Oversees daily operations and supply chain management. Ensures quality control and 
+                        timely delivery of all projects and materials.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Awards -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-slate-800 mb-4">Certifications & Recognition</h2>
+                <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+                    Our commitment to excellence is recognized through various certifications and industry awards.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-xl p-6 text-center shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-certificate text-2xl text-orange-600"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-2">ISO 9001:2015</h3>
+                    <p class="text-sm text-slate-600">Quality Management System</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 text-center shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-leaf text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-2">Green Building</h3>
+                    <p class="text-sm text-slate-600">Sustainable Construction Certified</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 text-center shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-2">OHSAS 18001</h3>
+                    <p class="text-sm text-slate-600">Occupational Health & Safety</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 text-center shadow-lg" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-award text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-2">Best Contractor</h3>
+                    <p class="text-sm text-slate-600">Indonesia Construction Awards 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-orange-600 to-orange-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-white mb-4">Ready to Work With Us?</h2>
+                <p class="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
+                    Join hundreds of satisfied clients who trust Hanasta Gama Putra for their construction needs. 
+                    Let's build something amazing together.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="index.html#contact" class="bg-white text-orange-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center">
+                        <i class="fas fa-phone mr-2"></i>
+                        Get In Touch
+                    </a>
+                    <a href="projects.html" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-orange-600 transition-colors inline-flex items-center justify-center">
+                        <i class="fas fa-eye mr-2"></i>
+                        View Our Work
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">
+                        <span class="text-orange-400">Hanasta</span> Gama Putra
+                    </h3>
+                    <p class="text-gray-300 mb-4">
+                        Your trusted partner for construction services and premium building supplies. 
+                        Building excellence, delivering quality since 2008.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-orange-400 transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-orange-400 transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-orange-400 transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-orange-400 transition-colors">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-orange-400 transition-colors">About Us</a></li>
+                        <li><a href="index.html#services" class="text-gray-300 hover:text-orange-400 transition-colors">Services</a></li>
+                        <li><a href="projects.html" class="text-gray-300 hover:text-orange-400 transition-colors">Projects</a></li>
+                        <li><a href="index.html#contact" class="text-gray-300 hover:text-orange-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-orange-400"></i>
+                            Jakarta, Indonesia
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2 text-orange-400"></i>
+                            +62 123 456 7890
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-orange-400"></i>
+                            info@hanastagamaputra.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Hanasta Gama Putra. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html> 
